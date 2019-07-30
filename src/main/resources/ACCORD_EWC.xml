@@ -1,4 +1,4 @@
-<FromServerResponse>
+<FormServerResponse>
 	<Status>
 		<StatusCode>0</StatusCode>
 		<StatusDec>0</StatusDec>
@@ -37,8 +37,8 @@
 		<PageReceivedCnt>4</PageReceivedCnt>
 		<PagesProcessedCnt>4</PagesProcessedCnt>
 	</ProcessDetails>
-	<ReturnPayLoad>
-		<ACCORD>
+	<ReturnPayload>
+		<ACORD>
 			<SignonRq></SignonRq>
 			<InsuranceSvcRq>
 				<RqUID>1234567</RqUID>
@@ -137,6 +137,6 @@
 					</Location>
 				</WorkCompPolicyQuoteInqRq>
 			</InsuranceSvcRq>
-		</ACCORD>
-	</ReturnPayLoad>
-</FromServerResponse>
+		</ACORD>
+	</ReturnPayload>
+</FormServerResponse>

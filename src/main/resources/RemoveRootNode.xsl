@@ -10,7 +10,7 @@
 	</xsl:template>
 
 	<xsl:template
-		match="Column[@SourceColumn='status']|Status" />
+		match="Column[@SourceColumn='Status']|Status" />
 	<xsl:template
 		match="Column[@SourceColumn='ProcessSummary']|ProcessSummary" />
 	<xsl:template
