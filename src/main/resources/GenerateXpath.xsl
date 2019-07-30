@@ -14,7 +14,7 @@
 		<xsl:copy-of select="./text()"/>
 		<xsl:text>&#xA;</xsl:text>	
 	</xsl:if>
-	<xsl:apply-templates select="@*/*"/>
+	<xsl:apply-templates select="@*|*"/>
 </xsl:template>
 
 <xsl:template match="*" mode="path">

@@ -45,7 +45,7 @@ public class CsvFormatter {
 		
 		try {
 			String outputfilename=inputfiletype.toUpperCase()+"_xpathOutPut_refined.csv";
-			FileWriter writter=new FileWriter(outputfilename);
+			FileWriter writter=new FileWriter("c:\\users\\"+System.getProperty("user.name")+"\\XPath\\"+outputfilename);
 			
 			for(CsvData cd:csvList) {
 				List<String> values=new ArrayList<String>();
@@ -57,11 +57,11 @@ public class CsvFormatter {
 			}
 			writter.flush();
 			writter.close();
-			//logger.info("Refined output file generated successfully");
+			logger.info("Refined output file generated successfully");
 			
 		}
 		catch(Exception e) {
-			//logger.error(e.getMessage());
+			logger.error(e.getMessage());
 		}
 		return csvList;
 	}
