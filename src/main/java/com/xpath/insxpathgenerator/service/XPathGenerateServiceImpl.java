@@ -91,24 +91,20 @@ public class XPathGenerateServiceImpl implements XPathGenerateService {
 	}
 	
 	@Override
-	public List<CsvData> generate() {
+	public List<CsvData> generate(File inputXmlFile,String inputfiletype) {
 		List<CsvData> data=null;
 		String baseDir="C:\\XPathGenerator";
 		logger.info("X Path gen started");
 		Properties props=new Properties();
-		String inputfiletype="ACO";//TO Be Taken from UI
 		 String xPathFileExtension="csv";//format to be taken from UI
 		try {
 			
-			File inputXmlFile = ResourceUtils.getFile("classpath:ACCORD_EWC.xml");//TO DO:-Get Uploaded File
-			
+		//File inputXmlFile = ResourceUtils.getFile("classpath:ACCORD_EWC.xml");//TO DO:-Get Uploaded File
 			
 			String inputXmlFileName=inputXmlFile.getName();
 			inputXmlFileName=inputXmlFileName.substring(0, inputXmlFileName.lastIndexOf("."));
 			
 			File outPutXmlFile=new File("c:\\users\\"+System.getProperty("user.name")+"\\XPath\\"+inputXmlFileName+"_Refined_Out.xml");
-			
-			
 			
 			if(inputfiletype.equalsIgnoreCase("ACO")) {
 				//accord
@@ -150,6 +146,7 @@ public class XPathGenerateServiceImpl implements XPathGenerateService {
 				
 			}
 		}
+		
 		catch(FileNotFoundException e)
 		{
 			logger.error(e.getMessage());
@@ -162,7 +159,7 @@ public class XPathGenerateServiceImpl implements XPathGenerateService {
 	}
 	public static void main(String[] args) {
 		XPathGenerateServiceImpl g=new XPathGenerateServiceImpl();
-		g.generate();
+		g.generate(null,null);
 	}
 	
 	
