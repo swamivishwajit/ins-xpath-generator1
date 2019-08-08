@@ -14,6 +14,7 @@ import org.apache.log4j.Logger;
 import com.xpath.insxpathgenerator.domain.CsvData;
 
 public class CsvFormatter {
+	public static final String uploadingDir = "src/main/resources/generatedfiles/";
 	static Logger logger=Logger.getLogger(CsvFormatter.class);
 	public static final char DEFAULT_SEPERATOR=',';
 	public static List<CsvData> generateRefinedFile(String filePath,String inputfiletype) {
@@ -45,7 +46,7 @@ public class CsvFormatter {
 		
 		try {
 			String outputfilename=inputfiletype.toUpperCase()+"_xpathOutPut_refined.csv";
-			FileWriter writter=new FileWriter("c:\\users\\"+System.getProperty("user.name")+"\\XPath\\"+outputfilename);
+			FileWriter writter=new FileWriter(uploadingDir+outputfilename);
 			
 			for(CsvData cd:csvList) {
 				List<String> values=new ArrayList<String>();

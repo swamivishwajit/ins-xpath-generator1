@@ -1,0 +1,45 @@
+/ACORD/InsuranceSvcRq/RqUID    1234567
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/NameInfo/CommlName/CommericalName    LIC Insurance Company
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/NameInfo/SupplementaryNameInfo/SupplementaryNameCd[1]    ATTN
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/NameInfo/SupplementaryNameInfo/SupplementaryNameCd[2]    Contact One
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Addr/Addr1    3200 Windy Hill Road Se
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Addr/Addr2    Suite -100w
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Addr/City    Atlanta
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Addr/StateProvCd    GA
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Addr/PostalCode    30339
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Communications/PhoneInfo[1]/PhoneType    Phone
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Communications/PhoneInfo[1]/PhoneNumber    +1-7797891860
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Communications/PhoneInfo[2]/PhoneType    Cell
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Communications/PhoneInfo[2]/PhoneNumber    8888888888
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Communications/PhoneInfo[3]/PhoneType    FAX
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Communications/PhoneInfo[3]/PhoneNumber    +1-7797891860
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/GeneralPartyInfo/Communications/EmailInfo    jon_roy@gmail.com
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/ProducerInfo/contactNumber    8888888888
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/ProducerInfo/ProducerSubCode    450-1
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Producer/ProducerInfo/ProducerRoleCd    Producer
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy[@id='N2']
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/LOBCd    Work
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/ContractTerm/EffectiveDt    2017-01-01
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/ContractTerm/ExpirationDt    2018-01-01
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/BillingMethodCd    AB
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/NameInfo/CommlName/CommericalName    Charlie Thompson
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/Communications/PhoneInfo[1]/PhoneTypeCd    Phone
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/Communications/PhoneInfo[1]/CommunicationUserCd    Business
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/Communications/PhoneInfo[1]/PhoneNumber    7777777777
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/Communications/PhoneInfo[2]/PhoneType    Cell
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/Communications/PhoneInfo[2]/CommunicationUserCd    Business
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/Communications/PhoneInfo[2]/PhoneNumber    4444444444
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/GeneralPartyInfo/Communications/EmailInfo    Charlie@gmail.com
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/MiscParty/MiscPartyInfo/MiscPartyRoleCd    Inspection Contact
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/PolicyStatusCd    NBS
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/CommlPolicy/CommlPolicySupplement/NumYrsInBusiness    10
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location[@id='N3']
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/ItemIdInfo/AgencyId    10
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/ItemIdInfo/InsurerId    1
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/Addr/AddrTypeCd    StreetAddress
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/Addr/Addr1    Avereburn
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/Addr/Addr2    Avereburn
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/Addr/City    Windsor
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/Addr/StateProvCd    CT
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/Addr/PostalCd    34765
+/ACORD/InsuranceSvcRq/WorkCompPolicyQuoteInqRq/Location/Addr/Country    US

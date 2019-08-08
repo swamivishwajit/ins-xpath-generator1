@@ -25,6 +25,7 @@ import com.xpath.insxpathgenerator.domain.CsvData;
 
 @Service
 public class XPathGenerateServiceImpl implements XPathGenerateService {
+	public static final String uploadingDir = "src/main/resources/generatedfiles/";
 
 	static Logger logger=Logger.getLogger(XPathGenerateServiceImpl.class);
 	public static void xslRemoveNode(String inFileName,String outFileName,String xslFileName) throws TransformerException
@@ -93,7 +94,6 @@ public class XPathGenerateServiceImpl implements XPathGenerateService {
 	@Override
 	public List<CsvData> generate(File inputXmlFile,String inputfiletype) {
 		List<CsvData> data=null;
-		String baseDir="C:\\XPathGenerator";
 		logger.info("X Path gen started");
 		Properties props=new Properties();
 		 String xPathFileExtension="csv";//format to be taken from UI
@@ -104,7 +104,7 @@ public class XPathGenerateServiceImpl implements XPathGenerateService {
 			String inputXmlFileName=inputXmlFile.getName();
 			inputXmlFileName=inputXmlFileName.substring(0, inputXmlFileName.lastIndexOf("."));
 			
-			File outPutXmlFile=new File("c:\\users\\"+System.getProperty("user.name")+"\\XPath\\"+inputXmlFileName+"_Refined_Out.xml");
+			File outPutXmlFile=new File(uploadingDir+inputXmlFileName+"_Refined_Out.xml");
 			
 			if(inputfiletype.equalsIgnoreCase("ACO")) {
 				//accord
@@ -130,7 +130,7 @@ public class XPathGenerateServiceImpl implements XPathGenerateService {
 			
 			File inputXmlFileMod=new File(outPutXmlFile.toString());
 			
-			File outputXmlFileMod=new File("c:\\users\\"+System.getProperty("user.name")+"\\XPath\\"+inputXmlFileName+"."+xPathFileExtension);
+			File outputXmlFileMod=new File(uploadingDir+inputXmlFileName+"."+xPathFileExtension);
 			
 			
 			System.out.println("Out Put FIle Exist's"+outputXmlFileMod.exists()+" Input Xml FIle Exists"+inputXmlFileMod.exists());

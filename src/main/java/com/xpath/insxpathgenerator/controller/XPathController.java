@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 //import java.io.InputStream;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,13 +22,15 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.xpath.insxpathgenerator.domain.CsvData;
 import com.xpath.insxpathgenerator.service.XPathGenerateService;
+import com.xpath.insxpathgenerator.service.XPathGenerateServiceImpl;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/xpath")
 public class XPathController {
 	
-	public static final String uploadingDir = "c:\\users\\"+System.getProperty("user.name")+"\\XPath\\uploaded\\";
+	public static final String uploadingDir = "src/main/resources/generatedfiles/";
+	static Logger logger=Logger.getLogger(XPathController.class);
 	@Autowired
 	private XPathGenerateService service;
 	
@@ -35,7 +38,7 @@ public class XPathController {
     public List<CsvData> uploadingPost(@RequestPart("file") MultipartFile file1,@RequestParam("fileType") String fileType ) throws IOException {
         
 		
-		    Path filepath = Paths.get("c:\\users\\"+System.getProperty("user.name")+"\\XPath\\", file1.getOriginalFilename());
+		    Path filepath = Paths.get(uploadingDir, file1.getOriginalFilename());
 
 		    try (OutputStream os = Files.newOutputStream(filepath)) {
 		        os.write(file1.getBytes());
@@ -46,14 +49,35 @@ public class XPathController {
             File inputFile=new File(filepath.toString());
             System.out.println("Exists"+inputFile.exists()+"Name"+inputFile.getName());
             List<CsvData> data=service.generate(inputFile,fileType);
-            
+            try{
+        		
+        		File folder = new File(uploadingDir);
+        		File[] filelists=folder.listFiles();
+            	
+        		for(File file:filelists){
+        			
+        			if(file.delete()){
+            			//System.out.println(file.getName() + " is deleted!");
+            			logger.info(file.getName() + " is deleted!");
+            		}else{
+            			//System.out.println("Delete operation is failed.");
+            			logger.error(file.getName() + "Delete operation is failed.");
+            		}
+        		}
+        		
+        	   
+        	}catch(Exception e){
+        		
+        		logger.error(e.getMessage());
+        		
+        	}
 
         return data;
     }
 	
 	@RequestMapping(value = "/asjson",method =RequestMethod.GET)
-	public List<CsvData> getXPathAsJson(){
-		return service.generate(null,null);
+	public String getXPathAsJson(){
+		return "hiiiii";
 	}
 
 }
