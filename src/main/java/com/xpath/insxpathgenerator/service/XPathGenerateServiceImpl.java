@@ -151,9 +151,13 @@ public class XPathGenerateServiceImpl implements XPathGenerateService {
 		{
 			logger.error(e.getMessage());
 		}
+		catch(RuntimeException e)
+		{
+			throw new RuntimeException("Error While Processing Input file");
+		}
 		catch(Exception e)
 		{
-			logger.error(e.getMessage());
+			throw new RuntimeException("UnExpected Error Occured");
 		}
 		return data;
 	}
