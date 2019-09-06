@@ -37,7 +37,7 @@ public class XPathController {
 	@Autowired
 	private XPathGenerateService service;
 	
-	@RequestMapping(value = "http://localhost:3000/**", method = RequestMethod.OPTIONS)
+	@RequestMapping(value = "http://192.168.0.104:3000/**", method = RequestMethod.OPTIONS)
 	public void corsHeaders(HttpServletResponse response) {
 		response.addHeader("Access-Control-Allow-Origin", "*");
 		response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");

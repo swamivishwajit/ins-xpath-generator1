@@ -1,0 +1,142 @@
+<FormServerResponse>
+	<Status>
+		<StatusCode>0</StatusCode>
+		<StatusDec>0</StatusDec>
+		<ConfidenceIndex>A</ConfidenceIndex>
+		<Messages>
+			<Message servirity="success">
+				<StatusCode>0</StatusCode>
+				<PageNumber>1</PageNumber>
+				<FileName>Sample.pdf</FileName>
+				<Text>Page Successfully Processed</Text>
+			</Message>
+			<Message servirity="success">
+				<StatusCode>0</StatusCode>
+				<PageNumber>2</PageNumber>
+				<FileName>Sample.pdf</FileName>
+				<Text>Page Successfully Processed</Text>
+			</Message>
+			<Message servirity="success">
+				<StatusCode>0</StatusCode>
+				<PageNumber>3</PageNumber>
+				<FileName>Sample.pdf</FileName>
+				<Text>Page Successfully Processed</Text>
+			</Message>
+		</Messages>
+	</Status>
+	<ProcessSummary>
+		<TransactionID>123</TransactionID>
+		<ProductVersion>1.0</ProductVersion>
+		<RequestDate>2019-02-02</RequestDate>
+		<processingTime>0 sec</processingTime>
+		<ExtractionTechique>E Forms</ExtractionTechique>
+	</ProcessSummary>
+	<ProcessDetails>
+		<LOBCd>Work</LOBCd>
+		<FilesReceivedCnt>1</FilesReceivedCnt>
+		<PageReceivedCnt>4</PageReceivedCnt>
+		<PagesProcessedCnt>4</PagesProcessedCnt>
+	</ProcessDetails>
+	<ReturnPayload>
+		<ACORD>
+			<SignonRq></SignonRq>
+			<InsuranceSvcRq>
+				<RqUID>1234567</RqUID>
+				<WorkCompPolicyQuoteInqRq>
+					<Producer>
+							<GeneralPartyInfo>
+								<NameInfo>
+									<CommlName>
+										<CommericalName>LIC Insurance Company</CommericalName>
+									</CommlName>
+									<SupplementaryNameInfo>
+										<SupplementaryNameCd>ATTN</SupplementaryNameCd>
+										<SupplementaryNameCd>Contact One</SupplementaryNameCd>
+									</SupplementaryNameInfo>
+								</NameInfo>
+								<Addr>
+									<Addr1>3200 Windy Hill Road Se</Addr1>
+									<Addr2>Suite -100w</Addr2>
+									<City>Atlanta</City>
+									<StateProvCd>GA</StateProvCd>
+									<PostalCode>30339</PostalCode>	
+								</Addr>
+								<Communications>
+									<PhoneInfo>
+										<PhoneType>Phone</PhoneType>
+										<PhoneNumber>+1-7797891860</PhoneNumber>
+									</PhoneInfo>
+									<PhoneInfo>
+										<PhoneType>Cell</PhoneType>
+										<PhoneNumber>8888888888</PhoneNumber>
+									</PhoneInfo>							
+									<PhoneInfo>
+										<PhoneType>FAX</PhoneType>
+										<PhoneNumber>+1-7797891860</PhoneNumber>
+									</PhoneInfo>
+									<EmailInfo>jon_roy@gmail.com</EmailInfo>
+								</Communications>
+							</GeneralPartyInfo>
+							<ProducerInfo>
+								<contactNumber>8888888888</contactNumber>
+								<ProducerSubCode>450-1</ProducerSubCode>
+								<ProducerRoleCd>Producer</ProducerRoleCd>
+							</ProducerInfo>
+					</Producer>
+					<CommlPolicy id="N2">
+						<LOBCd>Work</LOBCd>
+						<ContractTerm>
+							<EffectiveDt>2017-01-01</EffectiveDt>
+							<ExpirationDt>2018-01-01</ExpirationDt>
+						</ContractTerm>
+						<BillingMethodCd>AB</BillingMethodCd>
+						<MiscParty>
+							<GeneralPartyInfo>
+								<NameInfo>
+									<CommlName>
+										<CommericalName>Charlie Thompson</CommericalName>
+									</CommlName>
+								</NameInfo>
+								<Communications>
+									<PhoneInfo>
+										<PhoneTypeCd>Phone</PhoneTypeCd>
+										<CommunicationUserCd>Business</CommunicationUserCd>
+										<PhoneNumber>7777777777</PhoneNumber>
+									</PhoneInfo>
+									<PhoneInfo>
+										<PhoneType>Cell</PhoneType>
+										<CommunicationUserCd>Business</CommunicationUserCd>
+										<PhoneNumber>4444444444</PhoneNumber>
+									</PhoneInfo>							
+									<EmailInfo>Charlie@gmail.com</EmailInfo>
+								</Communications>
+							</GeneralPartyInfo>
+							<MiscPartyInfo>
+								<MiscPartyRoleCd>Inspection Contact</MiscPartyRoleCd>
+							</MiscPartyInfo>
+						</MiscParty>
+						<PolicyStatusCd>NBS</PolicyStatusCd>
+						<CommlPolicySupplement>
+							<NumYrsInBusiness>10</NumYrsInBusiness>
+						</CommlPolicySupplement>
+					</CommlPolicy>
+					<Location id="N3">
+						<ItemIdInfo>
+							<AgencyId>10</AgencyId>
+							<InsurerId>1</InsurerId>
+						</ItemIdInfo>
+						<Addr>
+							<AddrTypeCd>StreetAddress</AddrTypeCd>
+							<Addr1>Avereburn</Addr1>
+							<Addr2>Avereburn</Addr2>
+							<City>Windsor</City>
+							<StateProvCd>CT</StateProvCd>
+							<PostalCd>34765</PostalCd>
+							<Country>US</Country>
+						</Addr>
+					</Location>
+				</WorkCompPolicyQuoteInqRq>
+			</InsuranceSvcRq>
+		</ACORD>
+	</ReturnPayload>
+</FormServerResponse>
